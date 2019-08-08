@@ -1,0 +1,77 @@
+.mainContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #34495e ;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+}
+
+.text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+.navMenu {
+
+}
+
+.navMenuList {
+  display: flex;
+}
+
+.navMenuItem {
+  list-style: none;
+  font-family: 'Amatic SC', cursive;
+}
+
+.navMenuAnchor {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 0 0 10px;
+}
+
+.navMenuAnchor:hover {
+  background-color: #c0392b;
+  padding: 15px 0 15px 10px;
+}
+
+.homeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+.performancesList {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.performancesItem {
+  margin: 10px;
+  list-style: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+.textContainer {
+
+}
+
+.performancesImg {
+  justify-content: space-between;
+}
