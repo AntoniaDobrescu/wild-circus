@@ -241,6 +241,11 @@
   margin-bottom: 30px;
 }
 
+.anchorFooter {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .footerText {
   color: #FFFFFF;
   margin: 0;
