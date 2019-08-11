@@ -1,45 +1,90 @@
+.body {
+  margin: 0;
+}
+
 .mainContainer {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #34495e;
-  color: #ffffff;
-  border-radius: 8px;
+  padding: 0 0 0 10px;
+  background-color: #34495E;
+  color: #FFFFFF;
+  border-radius: 0 0 8px 8px;
+  position: fixed;
+  top: 0;
+  width: 1000px;
+  box-sizing: border-box;
 }
 
 .title {
   font-family: "Amatic SC", cursive;
   margin: 0;
+  font-size: 30px;
+}
+.title.performancesTitle {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0 0 0;
 }
 
 .text {
   font-family: "Amatic SC", cursive;
   font-size: 20px;
 }
+.text.performancesText {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+}
 
 .navMenuList {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navMenuItem {
   list-style: none;
   font-family: "Amatic SC", cursive;
+  font-size: 20px;
+}
+.navMenuItem.last .navMenuAnchor {
+  margin-right: 0;
+  border-bottom-right-radius: 8px;
 }
 
 .navMenuAnchor {
+  display: block;
+  padding: 15px 10px;
+  margin: 0 5px;
   text-decoration: none;
-  color: #ffffff;
-  padding: 0 0 0 10px;
+  color: #FFFFFF;
 }
-
-.navMenuAnchor:hover {
-  background-color: #c0392b;
-  padding: 15px 0 15px 10px;
+.navMenuAnchor.homeLink:hover {
+  background-color: #1abc9c;
+}
+.navMenuAnchor.perfomancesLink:hover {
+  background-color: #e74c3c;
+}
+.navMenuAnchor.aboutUsLink:hover {
+  background-color: #3498db;
+}
+.navMenuAnchor.pricesLink:hover {
+  background-color: #9b59b6;
+}
+.navMenuAnchor.contactLink:hover {
+  background-color: #e67e22;
 }
 
 .homeContainer {
@@ -50,6 +95,15 @@
 .btn {
   font-family: "Amatic SC", cursive;
   font-size: 20px;
+  color: #FFFFFF;
+  background-color: #34495E;
+  border: 0;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: #1abc9c;
 }
 
 .performancesList {
@@ -59,13 +113,137 @@
 }
 
 .performancesItem {
-  margin: 10px;
   list-style: none;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
 }
 
 .performancesImg {
+  max-width: 300px;
+}
+
+.target:target::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin: -60px 0 0;
+}
+
+.textAboutUs {
+  text-align: justify;
+}
+
+.aboutUsBoxes {
+  display: flex;
   justify-content: space-between;
+}
+
+.imgBox {
+  width: 40%;
+}
+
+.aboutUsBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 20%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.boxTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleBox {
+  font-size: 25px;
+}
+
+.textBox {
+  margin: 0;
+  font-size: 20px;
+}
+
+.tablePrices {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.headerTablePrices, .dataTablePrices {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+}
+
+.contactUsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUsFormItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.contactUsFormAndMap {
+  display: flex;
+  align-content: stretch;
+}
+
+.contactUsText {
+  color: #FFFFFF;
+}
+
+.contactUsTitle {
+  color: #FFFFFF;
+}
+
+.contactUsBtn {
+  background-color: #1abc9c;
+}
+
+.form {
+  background-color: #34495E;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.inputStyle {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.map {
+  width: 50%;
+}
+
+.footer {
+  background: #34495E;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+  border-radius: 8px 8px 0 0;
+}
+
+.separator {
+  height: 60px;
+  background-image: url("../img/footer2.jpg");
+  margin-bottom: 30px;
+}
+
+.footerText {
+  color: #FFFFFF;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

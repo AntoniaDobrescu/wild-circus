@@ -5,26 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <title>Wild Circus</title>
 </head>
-<body>
+<body class="body">
     <div class="mainContainer">
-        <header class="header">
+        <header class="header section">
             <h1 class="title">Wild Circus</h1>
             <nav class="navMenu">
                 <ul class="navMenuList">
-                    <li class="navMenuItem"><a href="#perfomances" class="navMenuAnchor ">PERFOMANCES</a></li>
-                    <li class="navMenuItem"><a href="#aboutUs" class="navMenuAnchor">ABOUT US</a></li>
-                    <li class="navMenuItem"><a href="#prices" class="navMenuAnchor">PRICES</a></li>
-                    <li class="navMenuItem"><a href="#contac" class="navMenuAnchor">CONTACT</a></li>
+                    <li class="navMenuItem performancesLink first"><a href="#home" class="navMenuAnchor homeLink">HOME</a></li>
+                    <li class="navMenuItem performancesLink "><a href="#performances" class="navMenuAnchor perfomancesLink">PERFOMANCES</a></li>
+                    <li class="navMenuItem "><a href="#aboutUs" class="navMenuAnchor aboutUsLink">ABOUT US</a></li>
+                    <li class="navMenuItem "><a href="#prices" class="navMenuAnchor pricesLink">PRICES</a></li>
+                    <li class="navMenuItem last"><a href="#contactUs" class="navMenuAnchor contactLink">CONTACT</a></li>
                     <div class="animation start"></div>
                 </ul>
             </nav>
         </header>
 
-        <section>
+        <section id="home" class="section">
             <div class="homeContainer">
                 <div>
                     <h2 class="title">Lorem ipsum dolor.</h2>
@@ -37,52 +38,133 @@
             </div>
         </section>
 
-        <section>
+        <section class="target section" id="performances">
             <h2 class="title">PERFOMANCES</h2>
             <ul class="performancesList">
-                <li class="performancesItem">
+                <li class="performancesItem first">
                     <img src="./img/laugh.jpg" alt="" class="performancesImg">
-                    <h3 class="title">Laugh</h3>
-                    <p class="text">As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+                    <h3 class="title performancesTitle">Laugh</h3>
+                    <p class="text performancesText">As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
                 </li>
 
                 <li class="performancesItem">
                     <img src="./img/dream.jpg" alt="" class="performancesImg">
-                    <h3 class="title">Dream</h3>
-                    <p class="text">Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+                    <h3 class="title performancesTitle">Dream</h3>
+                    <p class="text performancesText">Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
                 </li>
 
-                <li class="performancesItem">
+                <li class="performancesItem last">
                     <img src="./img/marvelAt.jpg" alt="" class="performancesImg">
 
-                    <h3 class="title">Marvel at</h3>
-                    <p class="text">Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+                    <h3 class="title performancesTitle">Marvel at</h3>
+                    <p class="text performancesText">Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
 
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>ABOUT US</h2>
+        <section class="target section" id="aboutUs">
+            <h2 class="title">ABOUT US</h2>
+            <p class="text textAboutUs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore praesentium quisquam sunt tempore? A accusamus autem cupiditate, debitis, eos magnam magni minima omnis perferendis quasi sapiente, sequi sunt voluptate? Accusamus beatae cupiditate dicta iure labore libero natus odio quam qui similique. At doloremque non nostrum numquam rerum. Aperiam aspernatur assumenda aut beatae deserunt dignissimos dolor dolorem eligendi eum fugit laboriosam, nobis obcaecati odit pariatur perspiciatis possimus quaerat quidem quis ratione recusandae sequi sunt suscipit tempore velit veritatis? Animi, dolor, quae! A accusamus adipisci alias aliquid, assumenda at distinctio doloribus earum enim expedita ipsam minima minus modi nostrum odit placeat porro quaerat qui quibusdam quo, repellat repellendus rerum voluptate! Accusantium ad alias atque consectetur deserunt ducimus, ea eos ex expedita illum itaque maiores maxime natus, necessitatibus non quis quisquam rem sunt? Adipisci consequuntur cumque deleniti et iure minus nulla provident quia similique sunt? Animi aperiam aut consectetur consequatur culpa dicta, distinctio doloremque eaque enim eum eveniet explicabo, harum iusto laborum mollitia natus nihil nobis nostrum odit, pariatur possimus quaerat quasi quidem sapiente sequi similique veniam voluptas voluptate voluptatem voluptates? Consequuntur culpa cum ex maiores porro. Beatae ducimus hic impedit iste, mollitia nihil praesentium quae quis ratione rerum similique sit, voluptatem!</p>
+            <div class="aboutUsBoxes">
+                <div class="aboutUsBox">
+                    <img src="./img/audience.png" alt="" class="imgBox">
+                    <div class="boxTextContainer">
+                        <p class="title titleBox">AUDIENCE</p>
+                        <p class="text textBox">587,145+</p>
+                    </div>
+                </div>
+                <div class="aboutUsBox">
+                    <img src="./img/tickets.png" alt="" class="imgBox">
+                    <div class="boxTextContainer">
+                        <p class="title titleBox">TOTAL SHOWS</p>
+                        <p class="text textBox">1,254+</p>
+                    </div>
+                </div>
+                <div class="aboutUsBox">
+                    <img src="./img/building.png" alt="" class="imgBox">
+                    <div class="boxTextContainer">
+                        <p class="title titleBox">CITIES</p>
+                        <p class="text textBox">258+</p>
+                    </div>
+                </div>
+                <div class="aboutUsBox">
+                    <img src="./img/world.png" alt="" class="imgBox">
+                    <div class="boxTextContainer">
+                        <p class="title titleBox">COUNTRIES</p>
+                        <p class="text textBox">50+</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>PRICES</h2>
-            <!--table-->
+
+        <section id="prices" class="section target pricesBackground">
+            <h2 class="title">PRICES</h2>
+            <table class="tablePrices">
+                <tr>
+                    <th class="headerTablePrices"></th>
+                    <th class="headerTablePrices    title">ADULTS</th>
+                    <th class="headerTablePrices title">CHILDREN UNDER 12</th>
+                    <th class="headerTablePrices title">GROUPS (MORE THAN 10)</th>
+                    <th class="headerTablePrices title">SCHOOLS</th>
+                </tr>
+                <tr>
+                    <td class="dataTablePrices text">WEEKS (WITHOUT WED.)</td>
+                    <td class="dataTablePrices text">35 	&#8364</td>
+                    <td class="dataTablePrices text">25 	&#8364</td>
+                    <td class="dataTablePrices text">20 	&#8364</td>
+                    <td class="dataTablePrices text">15 	&#8364</td>
+                </tr>
+                <tr>
+                    <td class="dataTablePrices text">WEEKENDS AND WENESDAYS</td>
+                    <td class="dataTablePrices text">40 	&#8364</td>
+                    <td class="dataTablePrices text">35 	&#8364</td>
+                    <td class="dataTablePrices text">25 	&#8364</td>
+                    <td class="dataTablePrices text">20 	&#8364</td>
+                </tr>
+            </table>
         </section>
 
-        <section>
-            <h2>CONTACT US</h2>
-            <!--form -->
+        <section id="contactUs" class="section target">
+            <div class="contactUsFormAndMap">
+                <div class="form">
+                    <h2 class="title contactUsTitle">CONTACT US</h2>
+                    <p class="text contactUsText">Please fill out the form below to contact us</p>
+                    <form action="" method="get" class="contactUsForm">
+                        <div class="contactUsFormItem contactUsText">
+                            <label for="name" class="title">Name</label>
+                            <input type="text" name="name" id="name" class="inputStyle" required>
+                        </div>
+                        <div class="contactUsFormItem contactUsText">
+                            <label for="email" class="title">Email</label>
+                            <input type="email" name="email" id="email" class="inputStyle" required>
+                        </div>
+                        <div class="contactUsFormItem contactUsText">
+                            <label for="message" class="title">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" class="btn contactUsBtn">
+                        </div>
+                    </form>
+                </div>
+                <div class="map"></div>
+            </div>
         </section>
 
-        <footer>
+        <div class="separator"></div>
+
+        <footer class="footer">
             <!-- TODO: Add your last name and first name.
       Place the link pointing on the Wild Code School website (https://wildcodeschool.com).
       You can also add the link to your own website, blog or Github profile.
      -->
-            <p>Wild Circus by [Your Name] - Codecademy: [Link to Codecademy] - SoloLearn: [Link to SoloLearn] - Wild Code School - [Creation date of your website]</p>
+            <p class="text footerText">Wild Circus by Antonia Dobrescu - Codecademy: https://www.codecademy.com/profiles/antonia.dobrescu - SoloLearn: https://www.sololearn.com/Profile/12075302 <br/>- Wild Code School - 11.08.2019</p>
         </footer>
+
+        <script src="main.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmW3cJp1Uv4BR97aVTYXSWp3eWNUV49wQ&callback=initMap" async defer></script>
     </div>
 </body>
 </html>
