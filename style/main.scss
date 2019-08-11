@@ -259,7 +259,11 @@ $grey : #ddd;
 
 .anchorFooter {
   text-decoration: none;
-  color: $white;
+  color: $mountainMeadow;
+
+  &:hover {
+    color: $zest;
+  }
 }
 
 .footerText {
